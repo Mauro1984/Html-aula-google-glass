@@ -1,0 +1,30 @@
+@charset "UTF-8";
+#tv-radio {
+  width: 900px;
+  height: 580px;
+  margin: auto;
+  background: url("../_imagens/radio-tv.png") no-repeat;
+}
+#musica {
+  display: block;
+  position: relative;
+  left: 570px;
+  top: 498px;
+  width: 310px;
+  height: 40px;
+}
+
+#video {
+  display: block;
+  position: relative;
+  left: 88px;
+  top: 81px;
+  width: 440px;
+}
+/* #video2 {
+  display: block;
+  position: relative;
+  left: 115px;
+  top: -450px; 
+}*/
+/*NEste caso seria para implementação do youtube*/

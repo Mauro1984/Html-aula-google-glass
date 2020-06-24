@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@font-face {
+  font-family: "fontelogo";
+  src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+  background-color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grid-16 {
+  background-color: #fff;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  text-align: justify;
+  text-indent: 50px;
+}
+a {
+  color: #606060;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/*Formatação do menu */
+#menu {
+  width: auto;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+#menu h1 {
+  display: none;
+}
+#menu ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 798px) and (max-width: 998px) {
+  #menu {
+    right: -25px;
+  }
+
+  #menu ul {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 797px) {
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #menu {
+    font-size: 10px;
+    position: relative;
+    top: 0px;
+    right: -20px;
+    float: left;
+    opacity: 1;
+  }
+  #icone {
+    width: 25%;
+  }
+  #menu {
+    background: #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+  }
+  .burguer {
+    position: relative;
+    display: block;
+    background: #000;
+    width: 25px;
+    height: 2px;
+    top: 20px;
+    left: 8px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .burguer:before,
+  .burguer:after {
+    background: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+  }
+
+  .burguer:before {
+    top: -5px;
+  }
+
+  .burguer:after {
+    bottom: -5px;
+  }
+
+  input:checked ~ label .burguer {
+    transform: rotate(45deg);
+  }
+
+  input:checked ~ label .burguer:before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+
+  input:checked ~ label .burguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+}
+
+#menu li {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 10px;
+  margin: 2px;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+}
+#menu li:hover {
+  position: relative;
+  background-color: #606060;
+}
+#menu a {
+  color: #000;
+  text-decoration: none;
+}
+#menu a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#icone {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+#cabecalho {
+  position: relative;
+  border-bottom: 1px #606060 solid;
+  height: 150px;
+  background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+#cabecalho h1 {
+  font-family: "fontelogo", Helvetica, sans-serif;
+  font-size: 30pt;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+#cabecalho h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15pt;
+  color: #888888;
+  padding: 0px;
+  margin-top: 0px;
+}
+#corpo {
+  display: block;
+  border-right: 1px solid #606060;
+  padding-right: 15px;
+  float: left;
+}
+#noticia-principal h2 {
+  font-size: 12pt;
+  color: #606060;
+  background-color: #ddd;
+  padding: 5px 0 5px 10px;
+  margin: 10px 0 10px 0;
+}
+#cabecalho-artigo h1 {
+  font-family: "fontelogo", Helvetica, sans-serif;
+  font-size: 20pt;
+  color: #606060;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#cabecalho-artigo h2 {
+  font-size: 12pt;
+  color: #cecece;
+  background: none;
+  margin: 0;
+}
+#cabecalho-artigo h3 {
+  font-size: 12pt;
+  color: #cecece;
+}
+.direita {
+  text-align: right;
+}
+#lateral {
+  display: block;
+  float: right;
+  background-color: #ddd;
+  padding: 10px;
+
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#lateral h1 {
+  font-family: "fontelogo", Helvetica, sans-serif;
+  font-size: 20pt;
+  color: #606060;
+  margin-top: 0px;
+}
+
+#lateral h2 {
+  background-color: #606060;
+  font-size: 13pt;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: -1px;
+}
+
+#tabelaespc {
+  border: 1px solid #606060;
+  border-spacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tabelaespc td {
+  border: 1px solid #606060;
+  padding: 10px;
+}
+#tabelaespc caption {
+  font-size: 13pt;
+  font-weight: bolder;
+  color: #888888;
+}
+#tabelaespc caption span {
+  font-size: 8pt;
+  color: #000;
+  display: block;
+  float: right;
+  margin-top: 10px;
+}
+
+.cd {
+  color: #fff;
+  background: #606060;
+  font-weight: bolder;
+  text-align: right;
+  vertical-align: top;
+}
+.ce {
+  color: #000;
+  text-align: left;
+  background: #cecece;
+}
+
+#rodape {
+  clear: both;
+  border-top: 1px solid #606060;
+}
+#rodape p {
+  text-align: center;
+}
+
+/* Formatação de Imagens com legendas */
+
+.foto-legenda {
+  position: relative;
+  border: 8px solid #fff;
+  box-shadow: 1px 1px 4px #000;
+}
+
+.foto-legenda img {
+  width: 100%;
+  height: 100%;
+}
+.foto-legenda figcaption {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 1s;
+}
+.foto-legenda figcaption:hover {
+  opacity: 1;
+}
+#video-artigo {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+#video-aside {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#menu-burguer {
+  display: none;
+}
