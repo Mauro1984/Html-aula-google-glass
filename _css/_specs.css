@@ -1,17 +1,27 @@
 @charset "UTF-8";
 
-#conteudo {
-  width: 1000px;
-  margin: auto;
+#conteudo img {
+  width: 100%;
 }
 
 #frame-spec {
-  width: 400px;
-  height: 280px;
   border: none;
   overflow: hidden;
 }
 
 iframe #frame-spec::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (max-width: 797px) {
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+  #frame-spec {
+    width: 100%;
+  }
 }
