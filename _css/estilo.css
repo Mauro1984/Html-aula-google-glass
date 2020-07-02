@@ -19,6 +19,8 @@ body {
 p {
   text-align: justify;
   text-indent: 50px;
+  font-size: 13px;
+  margin-bottom: 13px;
 }
 a {
   color: #606060;
@@ -26,6 +28,11 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+h1 {
+  font-size: 1.1em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 /*Formatação do menu */
 #menu {
@@ -41,88 +48,6 @@ a:hover {
   list-style: none;
   text-transform: uppercase;
 }
-@media only screen and (min-width: 798px) and (max-width: 998px) {
-  #menu {
-    right: -25px;
-  }
-
-  #menu ul {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 797px) {
-  *,
-  *:before,
-  *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  #menu {
-    font-size: 10px;
-    position: relative;
-    top: 0px;
-    right: -20px;
-    float: left;
-    opacity: 1;
-  }
-  #icone {
-    width: 25%;
-  }
-  #menu {
-    background: #ddd;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: -5px;
-    right: 5px;
-  }
-  .burguer {
-    position: relative;
-    display: block;
-    background: #000;
-    width: 25px;
-    height: 2px;
-    top: 20px;
-    left: 8px;
-    transition: 0.5s ease-in-out;
-  }
-
-  .burguer:before,
-  .burguer:after {
-    background: #000;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-  }
-
-  .burguer:before {
-    top: -5px;
-  }
-
-  .burguer:after {
-    bottom: -5px;
-  }
-
-  input:checked ~ label .burguer {
-    transform: rotate(45deg);
-  }
-
-  input:checked ~ label .burguer:before {
-    transform: rotate(90deg);
-    top: 0;
-  }
-
-  input:checked ~ label .burguer:after {
-    transform: rotate(90deg);
-    bottom: 0;
-  }
-}
-
 #menu li {
   display: inline-block;
   background-color: #ddd;
@@ -149,7 +74,7 @@ a:hover {
 #icone {
   position: absolute;
   right: 0;
-  top: 50px;
+  top: 43px;
 }
 #cabecalho {
   position: relative;
@@ -160,7 +85,7 @@ a:hover {
 
 #cabecalho h1 {
   font-family: "fontelogo", Helvetica, sans-serif;
-  font-size: 30pt;
+  font-size: 30px;
   color: #606060;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
   padding: 0px;
@@ -169,7 +94,7 @@ a:hover {
 
 #cabecalho h2 {
   font-family: "Titillium Web", sans-serif;
-  font-size: 15pt;
+  font-size: 15px;
   color: #888888;
   padding: 0px;
   margin-top: 0px;
@@ -179,9 +104,10 @@ a:hover {
   border-right: 1px solid #606060;
   padding-right: 15px;
   float: left;
+  margin-right: 0px;
 }
 #noticia-principal h2 {
-  font-size: 12pt;
+  font-size: 12px;
   color: #606060;
   background-color: #ddd;
   padding: 5px 0 5px 10px;
@@ -189,19 +115,19 @@ a:hover {
 }
 #cabecalho-artigo h1 {
   font-family: "fontelogo", Helvetica, sans-serif;
-  font-size: 20pt;
+  font-size: 20px;
   color: #606060;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 #cabecalho-artigo h2 {
-  font-size: 12pt;
+  font-size: 12px;
   color: #cecece;
   background: none;
   margin: 0;
 }
 #cabecalho-artigo h3 {
-  font-size: 12pt;
+  font-size: 12px;
   color: #cecece;
 }
 .direita {
@@ -209,23 +135,23 @@ a:hover {
 }
 #lateral {
   display: block;
-  float: right;
+  float: left;
   background-color: #ddd;
   padding: 10px;
-
+  margin: 15px 4px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 #lateral h1 {
   font-family: "fontelogo", Helvetica, sans-serif;
-  font-size: 20pt;
+  font-size: 20px;
   color: #606060;
   margin-top: 0px;
 }
 
 #lateral h2 {
   background-color: #606060;
-  font-size: 13pt;
+  font-size: 13px;
   color: #fff;
   padding: 5px;
   margin-bottom: -1px;
@@ -242,12 +168,12 @@ a:hover {
   padding: 10px;
 }
 #tabelaespc caption {
-  font-size: 13pt;
+  font-size: 13px;
   font-weight: bolder;
   color: #888888;
 }
 #tabelaespc caption span {
-  font-size: 8pt;
+  font-size: 8px;
   color: #000;
   display: block;
   float: right;
@@ -318,3 +244,43 @@ a:hover {
 #menu-burguer {
   display: none;
 }
+
+@media only screen and (min-width: 798px) and (max-width: 998px) {
+  #menu {
+    right: -25px;
+  }
+
+  #menu ul {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 797px) {
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+  #menu {
+    top: -80px;
+  }
+
+  #icone {
+    width: 35%;
+    right: -13px;
+    top: 83px;
+  }
+  #cabecalho {
+    height: 250px;
+    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 30px 200px;
+    padding-top: 100px;
+    margin-top: 20px;
+  }
+  #corpo {
+  border-right: none;
+}
+  #lateral {
+  margin: 15px -5px;
+}
+/* fim do estilo*/
