@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
 #album-fotos {
-  width: 900px;
-  margin: 0px;
+  margin-left: 79px;
   padding: 50px;
   overflow: hidden;
   list-style: none;
@@ -76,13 +75,19 @@ li:hover span {
 }
 
 @media only screen and (min-width: 798px) and (max-width: 998px) {
+  #album-fotos {
+    width: 900px;
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 797px) {
+  .grid-16 {
+    margin: 0 0 20px -12px;
+  }
   #album-fotos {
     width: 300px;
-    padding: 10px;
-    overflow: hidden;
-    list-style: none;
+    padding: 24px;
+    margin: 0 auto;
   }
   li span {
     padding-left: 20px;
