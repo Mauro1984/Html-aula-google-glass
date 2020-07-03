@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="whidt=device-whidt, initial-scale=1">
   <link rel="stylesheet" href="_css/grid.css" />
   <link rel="stylesheet" href="_css/estilo.css" />
   <link rel="stylesheet" href="_css/_specs.css" />
@@ -42,8 +43,8 @@
         </header>
         <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
         <section id="conteudo">
-          <div class="grid-10">
-            <img src="/_imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
+          <div class="grid-9">
+            <img src="/_imagens/glass-esquema-marcado.jpg" style=width:"1366" height: "704" ; usemap="#meumapa">
             <map name="meumapa">
               <!--poligonal (poly) são por pontos (X e Y) da fotos, neste caso estou usando 4 pontos ((X1,Y1),(X2,Y2),(X3,Y3),(X4,Y4)) -->
               <area shape="poly" coords="183,219,265,208,266,244,184,255" href="google-glass.html#tela" target="janela" alt="Tela do Google Glass">
@@ -53,7 +54,7 @@
               <area shape="circle" coords="77,52,12" href="google-glass.html#gadgets" target="janela" alt="Bateria Google Glass">
             </map>
           </div>
-          <iframe src="google-glass.html" width="35%" height="300px" scrolling="no" name="janela" id="frame-spec" class="grid-6"></iframe>
+          <iframe src="google-glass.html" width="35%" height="300px" scrolling="no" name="janela" id="frame-spec" class="grid-7"></iframe>
         </section>
       </article>
 
@@ -64,6 +65,14 @@
         <a href="http://facebook.com" target="_blank">Facebook </a>| <a href=" http://twitter.com" target="_blank">Twitter</a></p>
     </footer>
   </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="./_js/jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $(document).ready(function (e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+  </script>
 </body>
 <script src="_js/funcoes.js"></script>
 

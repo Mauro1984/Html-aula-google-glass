@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="whidt=device-whidt, initial-scale=1" />
   <title>Informações sobre o Google Glass</title>
   <style>
     body {
@@ -38,6 +39,16 @@
       float: right;
       margin-left: 5px;
     }
+
+    @media only screen and (min-width: 798px) and (max-width: 998px) {}
+
+    @media only screen and (max-width: 300px) {
+
+      .rotate90 {
+        transform: rotate(90deg);
+        margin-top: 80px;
+      }
+    }
   </style>
 </head>
 
@@ -46,7 +57,7 @@
 
   <article id="topo">
     <h2> Clique sobre as áreas destacadas em vermelho</h2>
-    <img src="/_imagens/mao.png" alt="Mão apontando para esquerda">
+    <img src="/_imagens/mao.png" class="rotate90" alt="Mão apontando para esquerda">
   </article>
 
   <article id="tela">

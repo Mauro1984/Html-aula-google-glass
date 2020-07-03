@@ -2,6 +2,7 @@
 
 #conteudo img {
   width: 100%;
+  height: 100%;
 }
 
 #frame-spec {
@@ -20,6 +21,12 @@ iframe #frame-spec::-webkit-scrollbar {
     margin: 0;
     padding: 4px;
     box-sizing: border-box;
+  }
+  #corpo-full {
+    margin-left: -4px;
+  }
+  #conteudo img {
+    width: 97%;
   }
   #frame-spec {
     width: 100%;

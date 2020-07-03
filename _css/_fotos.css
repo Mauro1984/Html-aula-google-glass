@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 #album-fotos {
-  width: 700px;
-  margin: 0 auto;
+  width: 900px;
+  margin: 0px;
   padding: 50px;
   overflow: hidden;
   list-style: none;
@@ -72,5 +72,20 @@ li:hover span {
 #foto05:hover,
 #foto06:hover {
   background-position: 0px;
-  background-size: 250px;
+  background-size: 100%;
+}
+
+@media only screen and (min-width: 798px) and (max-width: 998px) {
+}
+@media only screen and (max-width: 797px) {
+  #album-fotos {
+    width: 300px;
+    padding: 10px;
+    overflow: hidden;
+    list-style: none;
+  }
+  li span {
+    padding-left: 20px;
+    line-height: 350px;
+  }
 }
