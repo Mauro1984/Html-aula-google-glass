@@ -21,10 +21,43 @@
   top: 81px;
   width: 440px;
 }
-/* #video2 {
-  display: block;
-  position: relative;
-  left: 115px;
-  top: -450px; 
-}*/
-/*NEste caso seria para implementação do youtube*/
+
+@media only screen and (min-width: 798px) and (max-width: 998px) {
+  #tv-radio {
+    width: 752px;
+    height: 479px;
+    margin: auto;
+    background: url("../_imagens/radio-tv-2.png") no-repeat;
+  }
+  #video {
+    left: 72px;
+    top: 55px;
+    width: 370px;
+  }
+  #musica {
+    left: 477px;
+    top: 410px;
+    width: 255px;
+  }
+}
+
+@media only screen and (max-width: 797px) {
+  #tv-radio {
+    width: 300px;
+    height: 191px;
+    margin-left: -12px;
+    background: url("../_imagens/radio-tv-3.png") no-repeat;
+  }
+  #video {
+    left: 19px;
+    top: 15px;
+    width: 158px;
+  }
+  #musica {
+    left: 157px;
+    top: 159px;
+    width: 130px;
+    height: 16px;
+    padding: 0;
+  }
+}
