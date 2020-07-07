@@ -44,20 +44,18 @@
 @media only screen and (max-width: 797px) {
   #tv-radio {
     width: 300px;
-    height: 191px;
+    height: 307px;
     margin-left: -12px;
     background: url("../_imagens/radio-tv-3.png") no-repeat;
   }
   #video {
-    left: 19px;
-    top: 15px;
-    width: 158px;
+    left: 25px;
+    top: -10px;
+    width: 175px;
   }
   #musica {
-    left: 157px;
-    top: 159px;
-    width: 130px;
-    height: 16px;
-    padding: 0;
+    left: 10px;
+    top: 240px;
+    width: 275px;
   }
 }
